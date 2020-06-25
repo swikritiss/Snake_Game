@@ -64,6 +64,8 @@ def play():
       
     screen = pygame.display.set_mode(size)
 
+    pygame.display.set_caption('Snake Game')
+
     food_x = int((random.randint(1,width -snake_size))/snake_size)*snake_size  #random values of food
     food_y = int((random.randint(60,height-snake_size))/snake_size)*snake_size
 
